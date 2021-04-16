@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [firstColor, secondColor, thirdColor, forthColor, firstColor]
-        view.layer.addSublayer(gradientLayer)
+        //view.layer.addSublayer(gradientLayer)
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
 }
